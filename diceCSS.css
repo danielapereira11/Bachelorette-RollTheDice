@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(90deg, #ffafbd 20%, #c9ffbf 50%, #a4f54d 90.3%);
+}
+
+img.bachelorette-party {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dice-container {
+  width: 300px;
+  padding: 20px;
+  margin: 10px 0;
+  position: relative;
+  transform: translate(-50%);
+  left: 50%;
+  background: linear-gradient(-45deg, #ffafbd 20%, #c9ffbf 50%, #a4f54d 90.3%);
+  box-shadow: 5px 10px 40px #ffafbd;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dice-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+.dice-image {
+  width: 100px;
+  height: 100px;
+}
+p {
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+button {
+  width: 180px;
+  padding: 6px;
+  border: 2px solid rgb(196, 241, 187);
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.849);
+  color: white;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.shake {
+  animation: shake 0.7s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(-120deg);
+  }
+  100% {
+    tansform: rotate(120deg);
+  }
+}
+
+.list {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 20px 0;
+}
+li {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
